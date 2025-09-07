@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:schoolmanagement/buttongroup.dart';
 import 'package:schoolmanagement/home.dart';
+import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
   MyApp({super.key});
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget{
     //throw UnimplementedError();
     return MaterialApp(
       title: 'School Management',
-      home: ButtonGroup(),
+      home: UserInput(),
     );
   }
 }

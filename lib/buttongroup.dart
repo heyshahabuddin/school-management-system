@@ -23,7 +23,7 @@ class ButtonGroup extends StatelessWidget {
                 backgroundColor: Colors.red,
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5)
+                    borderRadius: BorderRadius.circular(5)
                 ),
 
               ),
@@ -40,7 +40,7 @@ class ButtonGroup extends StatelessWidget {
                   backgroundColor: Colors.red,
                   foregroundColor: Colors.white,
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5)
+                      borderRadius: BorderRadius.circular(5)
                   ),
 
                 ),
@@ -53,7 +53,7 @@ class ButtonGroup extends StatelessWidget {
                 backgroundColor: Colors.red,
                 foregroundColor: Colors.white,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(5)
+                    borderRadius: BorderRadius.circular(5)
                 ),
 
               ),
@@ -62,21 +62,21 @@ class ButtonGroup extends StatelessWidget {
                 onPressed: (){},
                 child: Text('Outline Button',
                   style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.w800,
-                    fontStyle: FontStyle.italic
+                      fontSize: 30,
+                      fontWeight: FontWeight.w800,
+                      fontStyle: FontStyle.italic
                   ),
                 )
             ),
             TextButton(
-                onPressed: (){},
-                child: Text('Read More...',
-                  style: TextStyle(
-                    fontSize: 30,
-                    fontWeight: FontWeight.w600,
-                    color: Colors.blueGrey,
-                  ),
+              onPressed: (){},
+              child: Text('Read More...',
+                style: TextStyle(
+                  fontSize: 30,
+                  fontWeight: FontWeight.w600,
+                  color: Colors.blueGrey,
                 ),
+              ),
             ),
             SizedBox(height: 50,),
             Icon(
