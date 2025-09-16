@@ -4,19 +4,22 @@ class UserInput extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    TextEditingController phoneController = TextEditingController();
+    TextEditingController passwordController = TextEditingController();
+
+
     return Scaffold(
       appBar: AppBar(
         title: Text('User Input'),
         backgroundColor: Colors.orange,
         centerTitle: true,
       ),
-      body: Column(
-        children: [
-          Padding(
-            //padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
-            //padding: const EdgeInsets.all(30),
-            padding: const EdgeInsets.only(left: 10, right: 15, top: 30, bottom: 30),
-            child: TextField(
+      body: Padding(
+        padding: const EdgeInsets.all(20.0),
+        child: Column(
+          children: [
+            TextField(
+              controller: phoneController,
               maxLength: 11,
               cursorColor: Colors.grey,
               keyboardType: TextInputType.phone,
@@ -55,12 +58,9 @@ class UserInput extends StatelessWidget {
 
               ),
             ),
-          ),
-          Padding(
-            //padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 15),
-            //padding: const EdgeInsets.all(30),
-            padding: const EdgeInsets.only(left: 10, right: 15, top: 30, bottom: 30),
-            child: TextField(
+            SizedBox(height: 30,),
+            TextField(
+              controller: phoneController,
               obscureText: true,
               //maxLength: 11,
               cursorColor: Colors.grey,
@@ -100,25 +100,30 @@ class UserInput extends StatelessWidget {
 
               ),
             ),
-          ),
-          SizedBox(
-            height: 60,
-            //width: 200,
-            width: double.infinity,
-            child: ElevatedButton(
-              onPressed: (){},
-              child: Text('Submit'),
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Colors.red,
-                foregroundColor: Colors.white,
-                shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5)
-                ),
+            SizedBox(height: 30,),
+            SizedBox(
+              height: 60,
+              //width: 200,
+              width: double.infinity,
+              child: ElevatedButton(
+                onPressed: (){
+                  print(phoneController.text);
+                  print(passwordController.text);
+                  phoneController.clear();
 
+                },
+                child: Text('Submit', style: TextStyle(fontSize: 25),),
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.red,
+                  foregroundColor: Colors.white,
+                  shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(5)
+                  ),
+                ),
               ),
             ),
-          ),
-        ],
+          ],
+        ),
       ),
     );
   }
