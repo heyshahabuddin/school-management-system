@@ -4,8 +4,11 @@ class UserForm extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // Declaring form fields controller
     TextEditingController phoneController = TextEditingController();
     TextEditingController passwordController = TextEditingController();
+
+    // Declaring form's key to identify the form uniquely from multiple forms within a single page
     final _userFormKey= GlobalKey<FormState>();
     return Scaffold(
       appBar: AppBar(
@@ -35,6 +38,8 @@ class UserForm extends StatelessWidget {
             ),
           ),
           SizedBox(height: 20,),
+
+          // form widget
           Form(
             key: _userFormKey,
               child: Padding(
@@ -96,7 +101,6 @@ class UserForm extends StatelessWidget {
                           }
 
                         },
-                        child: Text('Submit', style: TextStyle(fontSize: 20),),
                         style: ElevatedButton.styleFrom(
                           backgroundColor: Colors.red,
                           foregroundColor: Colors.white,
@@ -104,12 +108,80 @@ class UserForm extends StatelessWidget {
                               borderRadius: BorderRadius.circular(5)
                           ),
                         ),
+                        child: Text('Submit', style: TextStyle(fontSize: 20),),
                       ),
                     ),
                   ],
                 ),
               )
-          )
+          ),
+
+          // Container Widget
+          Container(
+            height: 70,
+            width: 300,
+            alignment: Alignment.center,
+            decoration: BoxDecoration(
+              color: Colors.deepOrange,
+              border: Border.all(
+                width: 5,
+                color: Colors.teal,
+              ),
+              borderRadius: BorderRadius.circular(15),
+              boxShadow: [
+                BoxShadow(
+                  color: Colors.grey.withOpacity(.2),
+                  offset: Offset(20, 10)
+                ),
+                BoxShadow(
+                  color: Colors.red.withOpacity(.2),
+                  offset: Offset(10, 12)
+                )
+              ],
+            ),
+            child: Text('This is container.', style: TextStyle(
+              color: Colors.white,
+              fontSize: 25,
+              fontWeight: FontWeight.bold,
+            ),),
+          ),
+
+          // card widget
+          SizedBox(height: 50,),
+          Card(
+            color: Colors.red,
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text('Simple Card',
+              style: TextStyle(
+                color: Colors.white,
+                fontSize: 20,
+                fontWeight: FontWeight.w400,
+              ),
+                        ),
+            ),
+          ),
+          SizedBox(height: 50,),
+          Card(
+            child: Container(
+              width: 300,
+              height: 60,
+              alignment: Alignment.center,
+              decoration: BoxDecoration(
+                color: Colors.teal,
+
+              ),
+              child: Text('Card container',
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w500,
+                ),
+              ),
+            ),
+          ),
+
+
         ],
       ),
     );
