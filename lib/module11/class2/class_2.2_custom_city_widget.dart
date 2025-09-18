@@ -15,8 +15,8 @@ class CustomCityWidget extends StatelessWidget {
     return Stack(
       children: [
         Container(
-          height: 200,
-          width: 300,
+          height: 400,
+          width: 500,
           decoration: BoxDecoration(
             borderRadius: BorderRadius.circular(10),
             image: DecorationImage(image: NetworkImage(img)),  // Convert the image into image
