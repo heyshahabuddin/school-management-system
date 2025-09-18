@@ -7,6 +7,7 @@ import 'package:schoolmanagement/module11/class_1.2_list_view.dart';
 import 'package:schoolmanagement/module11/class_1.3_list_view_builder.dart';
 import 'package:schoolmanagement/module11/class_1.4_list_view_builder_card.dart';
 import 'package:schoolmanagement/module11/class_1.5_list_view_builder_for_horizontal_container.dart';
+import 'package:schoolmanagement/module11/class_1.6_list_view_separator.dart';
 import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
@@ -18,7 +19,7 @@ class MyApp extends StatelessWidget{
     //throw UnimplementedError();
     return MaterialApp(
       title: 'School Management',
-      home: ListViewBuilderForContainer(),
+      home: ListViewSeparatorElement(),
     );
   }
 }
