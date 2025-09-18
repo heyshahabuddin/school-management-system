@@ -153,12 +153,12 @@ class UserForm extends StatelessWidget {
             child: Padding(
               padding: const EdgeInsets.all(8.0),
               child: Text('Simple Card',
-              style: TextStyle(
-                color: Colors.white,
-                fontSize: 20,
-                fontWeight: FontWeight.w400,
+                style: TextStyle(
+                  color: Colors.white,
+                  fontSize: 20,
+                  fontWeight: FontWeight.w400,
+                )
               ),
-                        ),
             ),
           ),
           SizedBox(height: 50,),
