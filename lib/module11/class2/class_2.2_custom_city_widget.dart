@@ -1,7 +1,6 @@
 // Right click on a widget to create custom widget --> Refactor --> Extract Flutter Widget
 // Give Name of the widget --> then copy the code --> Place it into a fresh dart file
 // Then use and import as your wish
-
 import 'package:flutter/material.dart';
 
 class CustomCityWidget extends StatelessWidget {
@@ -15,11 +14,19 @@ class CustomCityWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        Image.network('https://investbangladesh.co/wp-content/uploads/2024/04/hero-bangladesh.jpg'),
+        Container(
+          height: 200,
+          width: 300,
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(10),
+            image: DecorationImage(image: NetworkImage(img)),  // Convert the image into image
+          ),
+          //child: Image.network(img)
+        ),
         Positioned(
-          bottom: 15,
+          bottom: 35,
           right: 70,
-          child: Text('Bangladesh',
+          child: Text(title,
             style: TextStyle(
               color: Colors.white,
               fontSize: 25,
@@ -27,6 +34,19 @@ class CustomCityWidget extends StatelessWidget {
             ),
           ),
         ),
+        ElevatedButton(
+            onPressed: (){
+
+            },
+            child: Text(
+              '* ${ rating }',
+              style: TextStyle(
+                color: Colors.deepOrange,
+                fontWeight: FontWeight.bold,
+              ),
+            ),
+        ),
+
       ],
     );
   }

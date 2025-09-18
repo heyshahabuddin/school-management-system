@@ -23,6 +23,7 @@ class CustomStackWidget extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
+            SizedBox(height: 100,),
             Stack(  // Use Stack to overlap multiple contents for One on top of the other.
               children: [
                 Container(
@@ -75,18 +76,31 @@ class CustomStackWidget extends StatelessWidget {
             SizedBox(
               height: 70,
             ),
-            CustomCityWidget(
-              img: 'https://investbangladesh.co/wp-content/uploads/2024/04/hero-bangladesh.jpg',
-              title: '',
-              rating: '',
+            SingleChildScrollView(  // Marking Scroll
+              scrollDirection: Axis.horizontal,  // Scroll direction change
+              child: Row(
+                children: [
+                  CustomCityWidget(
+                    img: 'https://investbangladesh.co/wp-content/uploads/2024/04/hero-bangladesh.jpg',
+                    title: 'Bangladesh',
+                    rating: '4.5',
+                  ),
+                  SizedBox(width: 10,),
+                  CustomCityWidget(
+                    img: 'https://cms.inspirato.com/ImageGen.ashx?image=%2fmedia%2f5682444%2fLondon_Dest_16531610X.jpg&width=1920',
+                    title: 'London',
+                    rating: '4.9',
+                  ),
+                  SizedBox(width: 10,),
+                  CustomCityWidget(
+                    img: 'https://mldvwwasb8tu.i.optimole.com/cb:7ZGO.6206b/w:1100/h:658/q:90/f:best/ig:avif/dpr:2/https://travelaway.me/wp-content/uploads/2012/11/florida-state-america.jpg',
+                    title: 'Florida',
+                    rating: '5.0',
+                  ),
+                ],
+              ),
             ),
-            CustomCityWidget(
-              img: 'https://investbangladesh.co/wp-content/uploads/2024/04/hero-bangladesh.jpg',
-              title: '',
-              rating: '',
-            ),
-        
-        
+
         
           ],
         ),
