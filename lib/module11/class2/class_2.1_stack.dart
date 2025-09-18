@@ -75,8 +75,16 @@ class CustomStackWidget extends StatelessWidget {
             SizedBox(
               height: 70,
             ),
-            CityWidget(),
-            CityWidget(),
+            CustomCityWidget(
+              img: 'https://investbangladesh.co/wp-content/uploads/2024/04/hero-bangladesh.jpg',
+              title: '',
+              rating: '',
+            ),
+            CustomCityWidget(
+              img: 'https://investbangladesh.co/wp-content/uploads/2024/04/hero-bangladesh.jpg',
+              title: '',
+              rating: '',
+            ),
         
         
         

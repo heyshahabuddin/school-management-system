@@ -4,9 +4,11 @@
 
 import 'package:flutter/material.dart';
 
-class CityWidget extends StatelessWidget {
-  const CityWidget({
-    super.key,
+class CustomCityWidget extends StatelessWidget {
+  final String img, title, rating;
+
+  const CustomCityWidget({
+    super.key, required this.img, required this.title, required this.rating,
   });
 
   @override
