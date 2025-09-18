@@ -29,7 +29,7 @@ class GridViewBuilder extends StatelessWidget {
               //width: 200,
               color: Colors.deepOrange[100 * ((index % 8) + 1)],
               child: Center(
-                  child: Text("Item ${ index + 1 }",
+                  child: Text("Grid Item ${ index + 1 }",
                     style: TextStyle(
                       fontSize: 25,
                       fontWeight: FontWeight.bold,
