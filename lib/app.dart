@@ -10,6 +10,7 @@ import 'package:schoolmanagement/module11/class1/class_1.5_list_view_builder_for
 import 'package:schoolmanagement/module11/class1/class_1.6_list_view_separator.dart';
 import 'package:schoolmanagement/module11/class1/class_1.7_grid_view_basic.dart';
 import 'package:schoolmanagement/module11/class1/class_1.8_grid_view_builder.dart' show GridViewBuilder;
+import 'package:schoolmanagement/module11/class2/class_2.1_stack.dart';
 import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
@@ -21,7 +22,7 @@ class MyApp extends StatelessWidget{
     //throw UnimplementedError();
     return MaterialApp(
       title: 'School Management',
-      home: GridViewBuilder(),
+      home: CustomStackWidget(),
     );
   }
 }
