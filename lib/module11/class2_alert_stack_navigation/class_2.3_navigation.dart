@@ -22,6 +22,9 @@ class CustomNavigation extends StatelessWidget {
         child: Column(
           children: [
             ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.deepOrange,
+                ),
                 onPressed: (){
                   Navigator.push(
                       context,
@@ -32,7 +35,7 @@ class CustomNavigation extends StatelessWidget {
                 },
                 child: Text('Next Page',
                   style: TextStyle(
-                    color: Colors.deepOrange,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
                   ),
                 )

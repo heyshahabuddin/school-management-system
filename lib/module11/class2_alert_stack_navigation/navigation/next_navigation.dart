@@ -20,8 +20,17 @@ class NextNavigation extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
-            Text('This is Navigation Back Page'),
+            Text('This is Navigation Back Page',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 30,
+              ),
+            ),
+            SizedBox(height: 40,),
             ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Colors.blue,
+              ),
                 onPressed: (){
                   Navigator.pop(
                     context
@@ -29,11 +38,14 @@ class NextNavigation extends StatelessWidget {
                 },
                 child: Text('Back',
                   style: TextStyle(
-                    color: Colors.deepOrange,
+                    color: Colors.white,
                     fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                    //backgroundColor: Colors.deepOrange,
                   ),
-                )
-            )
+                ),
+
+            ),
           ],
         ),
       ),
