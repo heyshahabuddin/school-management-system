@@ -10,7 +10,7 @@ class ReplaceByNextNav extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.deepOrange,
         centerTitle: true,
-        title: Text("Replace By Next and No Back Navigation",
+        title: Text("No Back Page Navigation",
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
