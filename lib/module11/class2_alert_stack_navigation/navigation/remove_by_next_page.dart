@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/no_back.dart';
 
-class ReplaceByNextNav extends StatelessWidget {
-  const ReplaceByNextNav({super.key});
+class RemoveByNextNav extends StatelessWidget {
+  const RemoveByNextNav({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,7 +10,7 @@ class ReplaceByNextNav extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.deepOrange,
         centerTitle: true,
-        title: Text("No Back Page Navigation",
+        title: Text("Remove Next and No Back",
           style: TextStyle(
             color: Colors.white,
             fontWeight: FontWeight.bold,
@@ -22,7 +22,7 @@ class ReplaceByNextNav extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 50,),
-            Text('This is ReplaceByNextNav and have No Back Navigation.',
+            Text('This is Remove By Next and have No Back Navigation.',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
@@ -36,14 +36,15 @@ class ReplaceByNextNav extends StatelessWidget {
                   backgroundColor: Colors.deepOrange,
                 ),
                 onPressed: (){
-                  Navigator.pushReplacement(
+                  Navigator.pushAndRemoveUntil(
                     context,
                     MaterialPageRoute(
-                        builder: (context) => NoBackNav()
+                        builder: (context) => NoBackNav(),
                     ),
+                    (route) =>false
                   );
                 },
-                child: Text('Replace By Next',
+                child: Text('Remove By Next',
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.white,

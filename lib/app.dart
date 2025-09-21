@@ -12,6 +12,7 @@ import 'package:schoolmanagement/module11/class1_basic_widgets_and_layouts/class
 import 'package:schoolmanagement/module11/class1_basic_widgets_and_layouts/class_1.8_grid_view_builder.dart' show GridViewBuilder;
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/class_2.1_stack.dart';
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/class_2.3_navigation.dart';
+import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/remove_by_next_page.dart';
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/replace_by_next_page.dart';
 import 'package:schoolmanagement/user_input.dart';
 
@@ -24,8 +25,9 @@ class MyApp extends StatelessWidget{
     //throw UnimplementedError();
     return MaterialApp(
       title: 'School Management',
-      //home: CustomNavigation(),
-      home: ReplaceByNextNav(),
+      // home: CustomNavigation(),
+      // home: ReplaceByNextNav(),
+      home: RemoveByNextNav(),
     );
   }
 }
