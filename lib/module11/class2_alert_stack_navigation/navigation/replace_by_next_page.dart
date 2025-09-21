@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/no_back.dart';
 
-class NoBackPageNav extends StatelessWidget {
-  const NoBackPageNav({super.key});
+class ReplaceByNextNav extends StatelessWidget {
+  const ReplaceByNextNav({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -22,7 +22,7 @@ class NoBackPageNav extends StatelessWidget {
         child: Column(
           children: [
             SizedBox(height: 50,),
-            Text('This is No Back Page Navigation.',
+            Text('This is ReplaceByNextNav and have No Back Navigation.',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
                 fontSize: 25,
@@ -43,7 +43,7 @@ class NoBackPageNav extends StatelessWidget {
                     ),
                   );
                 },
-                child: Text('No Back',
+                child: Text('Replace By Next',
                   style: TextStyle(
                     fontSize: 30,
                     color: Colors.white,
