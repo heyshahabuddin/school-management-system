@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/page_next.dart';
 
 class NextNavigation extends StatelessWidget {
   const NextNavigation({super.key});
@@ -20,6 +21,7 @@ class NextNavigation extends StatelessWidget {
       body: Center(
         child: Column(
           children: [
+            SizedBox(height: 50,),
             Text('This is Navigation Back Page',
               style: TextStyle(
                 fontWeight: FontWeight.bold,
@@ -27,6 +29,28 @@ class NextNavigation extends StatelessWidget {
               ),
             ),
             SizedBox(height: 40,),
+            ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: Colors.teal,
+
+                ),
+                onPressed: (){
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => PageNextNav()
+                      )
+                  );
+                }, 
+                child: Text('Page Next',
+                  style: TextStyle(
+                    color: Colors.white,
+                    fontWeight: FontWeight.bold,
+                    fontSize: 25,
+                    //backgroundColor: Colors.deepOrange,
+                  ),
+                ),
+            ),
             ElevatedButton(
               style: ElevatedButton.styleFrom(
                 backgroundColor: Colors.blue,
