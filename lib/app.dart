@@ -14,6 +14,7 @@ import 'package:schoolmanagement/module11/class2_alert_stack_navigation/class_2.
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/class_2.3_navigation.dart';
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/remove_by_next_page.dart';
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/replace_by_next_page.dart';
+import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/value_pass.dart';
 import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
@@ -27,7 +28,8 @@ class MyApp extends StatelessWidget{
       title: 'School Management',
       // home: CustomNavigation(),
       // home: ReplaceByNextNav(),
-      home: RemoveByNextNav(),
+      // home: RemoveByNextNav(),
+      home: ValuePassing(name: 'shahab',),
     );
   }
 }
