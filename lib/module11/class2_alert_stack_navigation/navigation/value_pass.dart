@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/next_navigation.dart';
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/value_navigation.dart';
 
 class ValuePassing extends StatelessWidget {

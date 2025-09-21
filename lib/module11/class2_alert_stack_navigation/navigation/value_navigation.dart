@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/page_next.dart';
-
 class ValueNavigation extends StatelessWidget {
   final yourSchoolName;
   const ValueNavigation({super.key, required this.yourSchoolName});
