@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:schoolmanagement/module11/class_1_basic_widgets_and_layouts/class_1.2_list_view.dart';
 import 'package:schoolmanagement/module11/class_1_basic_widgets_and_layouts/class_1.4_list_view_builder_card.dart';
 import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/class_2.3_navigation.dart';
+import 'package:schoolmanagement/module12/class_2_tabs_drawer/TravelHomeScreen/TravelHomeScreen.dart';
 
 class LoadPagesWithTabs extends StatelessWidget {
   const LoadPagesWithTabs({super.key});
@@ -56,9 +57,10 @@ class LoadPagesWithTabs extends StatelessWidget {
         ),
         body: TabBarView(
           children: [
+            TravelHomeScreen(),
             CustomListViewBuilderCard(),
             ListViewWidget(),
-            CustomNavigation(),
+            //CustomNavigation(),
           ],
         ),
       ),
