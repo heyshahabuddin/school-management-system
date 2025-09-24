@@ -18,6 +18,7 @@ import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/navigat
 import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/navigation/value_pass.dart';
 import 'package:schoolmanagement/module12/class_1_theme_settings/class_1.1_theme_settings.dart';
 import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.1_tabs.dart';
+import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.2_load_pages_with_tabs.dart';
 import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
@@ -89,7 +90,8 @@ class MyApp extends StatelessWidget{
       // home: ValuePassing(name: 'shahab',),
       // home: Alerts(),
       // home: ThemeSettings(),
-      home: CustomTabs(),
+      // home: CustomTabs(),
+      home: LoadPagesWithTabs(),
     );
   }
 }
