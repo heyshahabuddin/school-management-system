@@ -16,6 +16,7 @@ import 'package:schoolmanagement/module11/class2_alert_stack_navigation/class_3.
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/remove_by_next_page.dart';
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/replace_by_next_page.dart';
 import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/value_pass.dart';
+import 'package:schoolmanagement/module12/class_1.1_theme_settings.dart';
 import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
@@ -26,12 +27,67 @@ class MyApp extends StatelessWidget{
     // TODO: implement build
     //throw UnimplementedError();
     return MaterialApp(
+      // setting theme for app - module 12
+      theme: ThemeData(
+        brightness: Brightness.dark,
+        primaryColor: Colors.teal,
+        primarySwatch: Colors.lightGreen,
+        scaffoldBackgroundColor: Colors.brown,
+        elevatedButtonTheme: ElevatedButtonThemeData(
+          style: ElevatedButton.styleFrom(
+            backgroundColor: Colors.teal,
+            foregroundColor: Colors.white,
+            shape: RoundedRectangleBorder(
+              borderRadius: BorderRadius.circular(10.0),
+            )
+          ),
+        ),
+        inputDecorationTheme: InputDecorationThemeData(
+          border: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(30),
+          ),
+          focusedBorder: OutlineInputBorder(
+            borderRadius: BorderRadius.circular(16),
+            borderSide: BorderSide(
+              color: Colors.blue,
+            ),
+          ),
+          hintStyle: TextStyle(
+            color: Colors.blue,
+          ),
+        ),
+        textTheme: TextTheme(
+          bodyLarge: TextStyle(
+            fontSize: 35,
+            fontWeight: FontWeight.bold,
+            color: Colors.cyanAccent,
+          ),
+          titleMedium: TextStyle(
+            fontSize: 35,
+            fontWeight: FontWeight.bold,
+            color: Colors.red,
+          ),
+        ),
+        cardTheme: CardThemeData(
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(10),
+          ),
+          color: Colors.red,
+        )
+      ),
+      darkTheme: ThemeData.dark(),
+      themeMode: ThemeMode.light,
+
       title: 'School Management',
+      // home: UserForm(),
+      // home: CustomListViewBuilderCard(),
+      // home: ListViewWidget(),
       // home: CustomNavigation(),
       // home: ReplaceByNextNav(),
       // home: RemoveByNextNav(),
       // home: ValuePassing(name: 'shahab',),
-      home: Alerts(),
+      // home: Alerts(),
+       home: ThemeSettings(),
     );
   }
 }

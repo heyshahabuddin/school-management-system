@@ -25,7 +25,6 @@ class ButtonGroup extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5)
                 ),
-
               ),
             ),
             SizedBox(height: 30,),
@@ -55,7 +54,6 @@ class ButtonGroup extends StatelessWidget {
                 shape: RoundedRectangleBorder(
                     borderRadius: BorderRadius.circular(5)
                 ),
-
               ),
             ),
             OutlinedButton(
