@@ -238,7 +238,6 @@ class TravelHomeScreen extends StatelessWidget {
               );
             },
           ),
-
         ],
       ),
 
