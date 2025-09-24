@@ -47,7 +47,7 @@ class TravelHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      /*
+
       appBar: AppBar(
           backgroundColor: Colors.teal,
           centerTitle: true,
@@ -58,40 +58,8 @@ class TravelHomeScreen extends StatelessWidget {
                 fontWeight: FontWeight.bold
             ),
           ),
-          bottom: TabBar(
-            //isScrollable: true,
-              indicatorColor: Colors.orange,
-              indicatorSize: TabBarIndicatorSize.tab,
-              indicatorWeight: 5,
-              indicatorPadding: EdgeInsets.all(4),
-              indicator: BoxDecoration(
-                  color: Colors.lightGreen,
-                  borderRadius: BorderRadius.circular(10)
-              ),
-              labelStyle: TextStyle(
-                  color: Colors.white,
-                  fontSize: 20,
-                  fontWeight: FontWeight.bold
-              ),
-              unselectedLabelColor: Colors.red,
-
-              tabs: [
-                Tab(
-                  icon: Icon(Icons.home),
-                  text: 'Home',
-                ),
-                Tab(
-                  icon: Icon(Icons.settings),
-                  text: 'Settings',
-                ),
-                Tab(
-                  icon: Icon(Icons.favorite),
-                  text: 'Favorite',
-                ),
-              ]
-          )
       ),
-     */
+
       body: ListView(
         children: [
           // === Stack Header ===
