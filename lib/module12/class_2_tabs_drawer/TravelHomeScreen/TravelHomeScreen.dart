@@ -47,6 +47,7 @@ class TravelHomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      /*
       appBar: AppBar(
           backgroundColor: Colors.teal,
           centerTitle: true,
@@ -90,6 +91,7 @@ class TravelHomeScreen extends StatelessWidget {
               ]
           )
       ),
+     */
       body: ListView(
         children: [
           // === Stack Header ===
