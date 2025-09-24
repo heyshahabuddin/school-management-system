@@ -93,6 +93,7 @@ class CustomDrawer extends StatelessWidget {
                   ),
               ),
               ListTile(
+                visualDensity: VisualDensity(horizontal: -4, vertical: -4),
                 leading: Icon(Icons.home),                     // add at the first
                 title: Text('Home',
                   style: TextStyle(
