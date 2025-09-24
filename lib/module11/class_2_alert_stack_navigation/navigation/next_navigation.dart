@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/page_next.dart';
+import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/navigation/page_next.dart';
 
 class NextNavigation extends StatelessWidget {
   const NextNavigation({super.key});

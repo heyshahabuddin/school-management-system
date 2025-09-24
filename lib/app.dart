@@ -2,21 +2,22 @@ import 'package:flutter/material.dart';
 import 'package:schoolmanagement/buttongroup.dart';
 import 'package:schoolmanagement/form.dart';
 import 'package:schoolmanagement/home.dart';
-import 'package:schoolmanagement/module11/class1_basic_widgets_and_layouts/class_1.1_list_tile.dart';
-import 'package:schoolmanagement/module11/class1_basic_widgets_and_layouts/class_1.2_list_view.dart';
-import 'package:schoolmanagement/module11/class1_basic_widgets_and_layouts/class_1.3_list_view_builder.dart';
-import 'package:schoolmanagement/module11/class1_basic_widgets_and_layouts/class_1.4_list_view_builder_card.dart';
-import 'package:schoolmanagement/module11/class1_basic_widgets_and_layouts/class_1.5_list_view_builder_for_horizontal_container.dart';
-import 'package:schoolmanagement/module11/class1_basic_widgets_and_layouts/class_1.6_list_view_separator.dart';
-import 'package:schoolmanagement/module11/class1_basic_widgets_and_layouts/class_1.7_grid_view_basic.dart';
-import 'package:schoolmanagement/module11/class1_basic_widgets_and_layouts/class_1.8_grid_view_builder.dart' show GridViewBuilder;
-import 'package:schoolmanagement/module11/class2_alert_stack_navigation/class_2.1_stack.dart';
-import 'package:schoolmanagement/module11/class2_alert_stack_navigation/class_2.3_navigation.dart';
-import 'package:schoolmanagement/module11/class2_alert_stack_navigation/class_3.1_alert.dart';
-import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/remove_by_next_page.dart';
-import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/replace_by_next_page.dart';
-import 'package:schoolmanagement/module11/class2_alert_stack_navigation/navigation/value_pass.dart';
-import 'package:schoolmanagement/module12/class_1.1_theme_settings.dart';
+import 'package:schoolmanagement/module11/class_1_basic_widgets_and_layouts/class_1.1_list_tile.dart';
+import 'package:schoolmanagement/module11/class_1_basic_widgets_and_layouts/class_1.2_list_view.dart';
+import 'package:schoolmanagement/module11/class_1_basic_widgets_and_layouts/class_1.3_list_view_builder.dart';
+import 'package:schoolmanagement/module11/class_1_basic_widgets_and_layouts/class_1.4_list_view_builder_card.dart';
+import 'package:schoolmanagement/module11/class_1_basic_widgets_and_layouts/class_1.5_list_view_builder_for_horizontal_container.dart';
+import 'package:schoolmanagement/module11/class_1_basic_widgets_and_layouts/class_1.6_list_view_separator.dart';
+import 'package:schoolmanagement/module11/class_1_basic_widgets_and_layouts/class_1.7_grid_view_basic.dart';
+import 'package:schoolmanagement/module11/class_1_basic_widgets_and_layouts/class_1.8_grid_view_builder.dart' show GridViewBuilder;
+import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/class_2.1_stack.dart';
+import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/class_2.3_navigation.dart';
+import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/class_3.1_alert.dart';
+import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/navigation/remove_by_next_page.dart';
+import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/navigation/replace_by_next_page.dart';
+import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/navigation/value_pass.dart';
+import 'package:schoolmanagement/module12/class_1_theme_settings/class_1.1_theme_settings.dart';
+import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.1_tabs.dart';
 import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
@@ -87,7 +88,8 @@ class MyApp extends StatelessWidget{
       // home: RemoveByNextNav(),
       // home: ValuePassing(name: 'shahab',),
       // home: Alerts(),
-       home: ThemeSettings(),
+      // home: ThemeSettings(),
+      home: CustomTabs(),
     );
   }
 }

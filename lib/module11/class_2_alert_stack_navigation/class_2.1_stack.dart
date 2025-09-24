@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:schoolmanagement/module11/class2_alert_stack_navigation/class_2.2_custom_city_widget.dart';
+import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/class_2.2_custom_city_widget.dart';
 
 class CustomStackWidget extends StatelessWidget {
   const CustomStackWidget({super.key});
