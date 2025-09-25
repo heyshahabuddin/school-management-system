@@ -17,9 +17,11 @@ import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/navigat
 import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/navigation/replace_by_next_page.dart';
 import 'package:schoolmanagement/module11/class_2_alert_stack_navigation/navigation/value_pass.dart';
 import 'package:schoolmanagement/module12/class_1_theme_settings/class_1.1_theme_settings.dart';
+import 'package:schoolmanagement/module12/class_2_tabs_drawer/TravelHomeScreen/TravelHomeScreen.dart';
 import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.1_tabs.dart';
 import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.2_load_pages_with_tabs.dart';
 import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.3_drawer.dart';
+import 'package:schoolmanagement/module12/class_3_advance_navigation/class_3.1_advance_navigation.dart';
 import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
@@ -93,7 +95,17 @@ class MyApp extends StatelessWidget{
       // home: ThemeSettings(),
       // home: CustomTabs(),
       // home: LoadPagesWithTabs(),
-      home: CustomDrawer(),
+      // home: CustomDrawer(),
+      home: AdvancedCustomNavigation(),
+      initialRoute: '/home',
+
+      // setting theme for app - module 12 - Class: 03
+      // Setting routes like url
+      routes: {
+        '/home'     : (context) => TravelHomeScreen(),
+        '/settings' : (context) => ThemeSettings(),
+        '/favorite' : (context) => ListViewWidget(),
+      },
     );
   }
 }
