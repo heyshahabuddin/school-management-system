@@ -22,6 +22,7 @@ import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.1_tabs.dar
 import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.2_load_pages_with_tabs.dart';
 import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.3_drawer.dart';
 import 'package:schoolmanagement/module12/class_3_advance_navigation/class_3.1_advance_navigation.dart';
+import 'package:schoolmanagement/module12/class_3_advance_navigation/class_3.2_bottom_navigation.dart';
 import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
@@ -97,7 +98,7 @@ class MyApp extends StatelessWidget{
       // home: LoadPagesWithTabs(),
       // home: CustomDrawer(),
       home: AdvancedCustomNavigation(),
-      initialRoute: '/home',
+      initialRoute: '/bottomNav',
 
       // setting theme for app - module 12 - Class: 03
       // Setting routes like url
@@ -105,6 +106,7 @@ class MyApp extends StatelessWidget{
         '/home'     : (context) => TravelHomeScreen(),
         '/settings' : (context) => ThemeSettings(),
         '/favorite' : (context) => ListViewWidget(),
+        '/bottomNav' : (context) => CustomBottomNav(),
       },
     );
   }
