@@ -24,21 +24,6 @@ class ExpandedFlexible extends StatelessWidget {
       ),
       body: Column(
           children: [
-            SizedBox(
-              height: 200,
-              child: ListView.builder(  // list items will  place within 200px height
-                itemCount: 20,
-                itemBuilder: (context, index){
-                  return ListTile(
-                    title: Text('Hello, Flutter!'),
-                  );
-                }
-              ),
-            ),
-            Divider(
-              height: 50,
-              color: Colors.blue,
-            ),
             Expanded(
               child: ListView.builder(  // list items will  place within 200px height
                 itemCount: 20,
