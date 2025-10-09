@@ -32,7 +32,7 @@ class ListviewBuilderWithSingleChildScrollViewFixing extends StatelessWidget {
                 itemCount: 20,
                 itemBuilder: (context, index){
                   return ListTile(
-                    title: Text('Hello, Flutter App!'),
+                    title: Text('Hello, Flutter!'),
                   );
                 }
             ),
@@ -41,7 +41,67 @@ class ListviewBuilderWithSingleChildScrollViewFixing extends StatelessWidget {
               height: 50,
               color: Colors.blue,
             ),
-        
+            Text('Hello,  Flutter App!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            Text('Hello,  Flutter App!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            Text('Hello,  Flutter App!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            Text('Hello,  Flutter App!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            Text('Hello,  Flutter App!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            Text('Hello,  Flutter App!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            Text('Hello,  Flutter App!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            Text('Hello,  Flutter App!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            Text('Hello,  Flutter App!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+            Text('Hello,  Flutter App!',
+              style: TextStyle(
+                fontSize: 35,
+                fontWeight: FontWeight.bold
+              ),
+            ),
+
           ],
         ),
       ),
