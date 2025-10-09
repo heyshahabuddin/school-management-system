@@ -24,6 +24,7 @@ import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.3_drawer.d
 import 'package:schoolmanagement/module12/class_3_advance_navigation/class_3.1_advance_navigation.dart';
 import 'package:schoolmanagement/module12/class_3_advance_navigation/class_3.2_bottom_navigation.dart';
 import 'package:schoolmanagement/module14/class_1_introduction_to_responsiveness/class_1.1_introduction_to_responsiveness.dart';
+import 'package:schoolmanagement/module14/class_1_introduction_to_responsiveness/class_1.2_expanded_flexible.dart';
 import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
@@ -100,7 +101,8 @@ class MyApp extends StatelessWidget{
       // home: LoadPagesWithTabs(),
       // home: CustomDrawer(),
       // home: AdvancedCustomNavigation(),
-      home: IntroductionToResponsiveness(),
+      // home: IntroductionToResponsiveness(),
+      home: ExpandedFlexible(),
       //initialRoute: '/bottomNav',
 
       // setting theme for app - module 12 - Class: 03
