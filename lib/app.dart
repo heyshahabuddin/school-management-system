@@ -23,6 +23,7 @@ import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.2_load_pag
 import 'package:schoolmanagement/module12/class_2_tabs_drawer/class_2.3_drawer.dart';
 import 'package:schoolmanagement/module12/class_3_advance_navigation/class_3.1_advance_navigation.dart';
 import 'package:schoolmanagement/module12/class_3_advance_navigation/class_3.2_bottom_navigation.dart';
+import 'package:schoolmanagement/module14/class_1_introduction_to_responsiveness/class_1.1_introduction_to_responsiveness.dart';
 import 'package:schoolmanagement/user_input.dart';
 
 class MyApp extends StatelessWidget{
@@ -83,6 +84,7 @@ class MyApp extends StatelessWidget{
       ),
       darkTheme: ThemeData.light(),
       themeMode: ThemeMode.light,
+      debugShowCheckedModeBanner: false,
 
       title: 'School Management',
       // home: UserForm(),
@@ -97,17 +99,21 @@ class MyApp extends StatelessWidget{
       // home: CustomTabs(),
       // home: LoadPagesWithTabs(),
       // home: CustomDrawer(),
-      home: AdvancedCustomNavigation(),
-      initialRoute: '/bottomNav',
+      // home: AdvancedCustomNavigation(),
+      home: IntroductionToResponsiveness(),
+      //initialRoute: '/bottomNav',
 
       // setting theme for app - module 12 - Class: 03
       // Setting routes like url
+      /*
       routes: {
         '/home'     : (context) => TravelHomeScreen(),
         '/settings' : (context) => ThemeSettings(),
         '/favorite' : (context) => ListViewWidget(),
         '/bottomNav' : (context) => CustomBottomNav(),
       },
+      */
+
     );
   }
 }
