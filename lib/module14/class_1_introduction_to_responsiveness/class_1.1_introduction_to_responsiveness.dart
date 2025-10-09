@@ -7,7 +7,9 @@ class IntroductionToResponsiveness extends StatelessWidget {
   Widget build(BuildContext context) {
     Size screenSize = MediaQuery.of(context).size;
     final bool isTable = screenSize.width > 600;
+
     final Orientation deviceMode = MediaQuery.of(context).orientation;
+
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
@@ -82,6 +84,21 @@ class IntroductionToResponsiveness extends StatelessWidget {
                 ),
               ),
               SizedBox(height: 30,),
+
+              // show icon according to device orientation
+              deviceMode == Orientation.portrait ?
+              Icon(Icons.mobile_friendly, size: 80,):
+              Icon(Icons.tab, size: 80,),
+              SizedBox(height: 30,),
+
+              // show items according to device size
+              Text('Adaptive layout ${isTable ? 'Table': 'Mobile'}',
+                style: TextStyle(
+                  fontSize: 25,
+                  fontWeight: FontWeight.bold,
+                ),
+              ),
+
               isTable? Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 children: [
